@@ -1,0 +1,152 @@
+body {
+  overflow-x: hidden;
+}
+
+
+.hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #232526, #3e729d),
+                  center/cover no-repeat;
+    }
+  .card {
+  transition: transform 0.6s ease-in-out, box-shadow 0.4s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+  #brand-logo {
+    transition: transform 0.7s ease, color 0.3s ease;
+    color: lightcyan;
+  }
+  #brand-logo:hover {
+    transform: scale(1.2);
+    color: beige; 
+    text-shadow: 0 0 8px rgb(100, 107, 107);
+  }
+
+
+.nav-custom {
+  transition:
+    transform 0.7s ease,
+    color 0.7s ease,
+    text-shadow 0.7s ease,
+    letter-spacing 0.7s ease,
+    border 0.4s ease;
+  letter-spacing: normal;
+  color: beige;   
+  border: 1px solid transparent;   
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+
+.nav-custom:hover {
+  transform: scale(1.2);
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgb(48, 110, 164), 0 0 12px rgb(61, 128, 128);
+  letter-spacing: 2px;
+  border: 1px solid lightcyan;      
+}
+
+
+
+  .btn-animated {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.7s ease-in-out;
+    background:  #0a1f30;
+    color: beige;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .btn-animated:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #232526, #3e729d);
+    box-shadow: 0 8px 20px rgb(54, 62, 62);
+    color: lightcyan;
+  }
+
+  .btn-animated i {
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .btn-animated:hover i {
+    transform: translateX(5px);
+  }
+
+  
+  .btn-animated::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+  }
+
+  .btn-animated:hover::after {
+    animation: shine 0.75s forwards;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 125%;
+    }
+  }
+
+.mt-4  {
+    color: lightcyan;
+  }
+
+
+  .hover-grow {
+    transition: transform 0.7s ease;
+    display: inline-block;
+  }
+
+  .hover-grow:hover {
+    transform: scale(1.1);
+    color: rgb(152, 255, 241);
+  }
+
+h3, h2 {
+color: lightcyan;
+}
+
+p{
+  color: beige;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
