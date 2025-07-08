@@ -168,15 +168,3 @@ p{
         min-width: 250px;
       }
     }
-
-  @media (max-width: 767.98px) {
-      .mobile-alt .image-block {
-        order: 0 !important;
-      }
-      .mobile-alt .text-block {
-        order: 1 !important;
-      }
-      .image-block + .image-block {
-        margin-top: 1.5rem;
-      }
-    }
